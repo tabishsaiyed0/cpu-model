@@ -1,0 +1,4 @@
+root ::= "{" ws "\"narration\"" ws ":" ws string ws "," ws "\"location\"" ws ":" ws string ws "," ws "\"hp_change\"" ws ":" ws number ws "," ws "\"loot\"" ws ":" ws string ws "}"
+string ::= "\"" ([^"\n\\] | "\\" ["\\/bfnrt])* "\""
+number ::= "-"? [0-9]+
+ws ::= [ \t\n]*
